@@ -15,6 +15,19 @@ const btnHold = document.querySelector('.btn--hold');
 
 let scores, currentScore, activePlayer, playing;
 
+
+function checkOrientation(){
+if(window.innerHeight < window.innerWidth)
+{
+  document.querySelector("body").style.display = "flex";
+  document.querySelector(".check-landscape").classList.remove("hidden")
+}
+else document.querySelector("body").style.display = "none";
+document.querySelector(".check-landscape").classList.add("hidden");
+}
+
+checkOrientation();
+window.addEventListener('resize',checkOrientation)
 // Starting conditions
 const init = function () {
   scores = [0, 0];
