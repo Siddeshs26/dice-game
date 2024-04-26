@@ -140,7 +140,7 @@ main {
 }
 
 .btn:active {
-  transform: translate(-50%, 3px);
+  transform: translateY(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
@@ -187,13 +187,18 @@ main {
     margin-bottom: 0.5rem;
   }
   .btn {
-   
+    
     font-size: 1.2rem;
     font-weight: 250;
-  
+    
     padding: 0.4rem 1rem;
   }
-    
+  .btn:active{
+
+    transform: translateY(-50%, 3px);
+  }
+  
+  
   .btn--new {
     top: 2rem;
   }
